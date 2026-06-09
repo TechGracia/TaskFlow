@@ -106,4 +106,4 @@ npm run dev
 
 ## Author
 
-Built by G using Svelte.
+Built by Gracia using Svelte.
