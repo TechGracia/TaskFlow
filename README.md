@@ -1,42 +1,109 @@
-# sv
+# TaskFlow – Task Manager using Svelte
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+TaskFlow is a task management application built using Svelte.
 
-## Creating a project
+This project was created to practice Svelte concepts such as state management, components, props, event handling, lifecycle methods, and local storage.
 
-If you're seeing this, you've probably already done this step. Congrats!
+---
 
-```sh
-# create a new project
-npx sv create my-app
+## Features
+
+* Add tasks
+* Edit tasks
+* Delete tasks
+* Mark tasks as completed
+* Filter tasks (All / Active / Completed)
+* Clear completed tasks
+* Progress tracking
+* Persistent storage using localStorage
+* Responsive UI
+
+---
+
+## Tech Stack
+
+* Svelte
+* JavaScript
+* HTML
+* CSS
+* Vite
+
+---
+
+## Concepts Used
+
+### State Management
+
+Used `$state()` to manage reactive data.
+
+### Components
+
+Split UI into reusable components.
+
+### Props
+
+Used `$props()` to pass data between components.
+
+### Event Handling
+
+Handled user interactions such as adding, editing, and deleting tasks.
+
+### Lifecycle
+
+Used `onMount()` to load saved tasks.
+
+### Local Storage
+
+Stored tasks in browser storage to persist data after refresh.
+
+---
+
+## Project Structure
+
+```text
+src/
+│
+├── routes/
+│   └── +page.svelte
+│
+├── lib/
+│   └── components/
+│       └── TaskItem.svelte
 ```
 
-To recreate this project with the same configuration:
+---
 
-```sh
-# recreate this project
-npx sv@0.15.4 create --template minimal --no-types --add prettier --install npm task-manager
+## Installation
+
+Clone repository:
+
+```bash
+git clone <repository-url>
 ```
 
-## Developing
+Install dependencies:
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+```bash
+npm install
+```
 
-```sh
+Run locally:
+
+```bash
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
 ```
 
-## Building
+---
 
-To create a production version of your app:
+## Future Improvements
 
-```sh
-npm run build
-```
+* Backend integration
+* Authentication
+* Database storage
+* User accounts
 
-You can preview the production build with `npm run preview`.
+---
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+## Author
+
+Built by G using Svelte.
